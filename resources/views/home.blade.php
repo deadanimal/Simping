@@ -33,7 +33,7 @@
         </div>
         <div class="overflow-hidden" style="max-height: 30vh;">
             <div class="container px-5">
-                <img src="/images/1.JPG" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                <img src="{{ URL::asset('images/1.JPG') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
                     width="700" height="500" loading="lazy">
             </div>
         </div>
@@ -46,7 +46,7 @@
             <div class="col-10 col-sm-8 col-lg-6">
                 <div class="wrapper">
                     <video autoplay muted loop class="myVideo">
-                        <source src="/videos/3.mp4" type="video/mp4">
+                        <source src="{{ URL::asset('videos/3.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
