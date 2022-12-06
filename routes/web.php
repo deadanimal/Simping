@@ -1,18 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 use App\Http\Controllers\BriefController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\WebController;
 
 Route::get('', [WebController::class, 'home'])->name('home');
+Route::get('brand', [WebController::class, 'home_brand'])->name('home_brand');
+Route::get('creator', [WebController::class, 'home_creator'])->name('home_creator');
 
 Route::middleware('auth')->group(function () {
     Route::get('dashboard', [WebController::class, 'dashboard'])->name('dashboard');
 
     Route::get('briefs/{id}', [BriefController::class, 'detail'])->name('brief.detail');
     Route::get('briefs/{brief_id}/contents/{content_id}', [ContentController::class, 'list_by_brief'])->name('content.list_by_brief');
+
+    Route::get('/billing-portal', function (Request $request) {
+        return $request->user()->redirectToBillingPortal();
+    });    
 });
 
 

@@ -2,12 +2,15 @@
 
 @section('content')
     <div class="row my-3">
-        <div class="col-xl-3">
+        <div class="col-xl-4">
             <div class="card">
-                <div class="card-header bg-secondary text-white">Profile</div>
+                <div class="card-header bg-info text-white">Profile</div>
                 <div class="card-body">
-                    
-                    {{ Auth::user()->name }}
+
+                    {{-- {{ Auth::user()->name }} --}}
+                    email, name,
+                    tiktok_handle,
+                    reset_password
 
 
                     <form action="/logout" method="POST">
@@ -22,13 +25,30 @@
 
 
         </div>
-        <div class="col-xl-9">
+        <div class="col-xl-8">
 
-            <div class="card">
-                <div class="card-header bg-secondary text-white">Details</div>
-                <div class="card-body">
+            @role('brand')
+                <div class="card">
+                    <div class="card-header bg-info text-white">Billing Portal</div>
+                    <div class="card-body">
+                        <a href="/billing-portal">Billing Portal</a>
+                    </div>
                 </div>
-            </div>
+
+                <div class="card">
+                    <div class="card-header bg-info text-white">Invoice</div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            @endrole
+
+            @role('creator')
+                <div class="card">
+                    <div class="card-header bg-info text-white">Reward</div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            @endrole
 
         </div>
     </div>

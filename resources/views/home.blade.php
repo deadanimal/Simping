@@ -16,18 +16,18 @@
 @endsection
 
 @section('content')
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <div class="px-4 pt-5 my-5 text-center">
         <h1 class="display-4 fw-bold">Simping</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">
                 Simping lets everyone to earn rewards from promoting the brands that they love.
-                Brands also enjoy wider marketing reach with lower costs(CPC and CPM).
+                Brands also enjoy wider marketing reach with lower costs and the highest ROI in the market.
                 Register today to start reaping benefits from influencing!
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <a href="/register"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Join as
+                <a href="/creator"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Join as
                         Creator</button></a>
-                <a href="/register?jenis=brand"><button type="button" class="btn btn-warning btn-lg px-4">Join as
+                <a href="/brand"><button type="button" class="btn btn-info btn-lg px-4">Join as
                         Brand</button></a>
             </div>
         </div>
@@ -39,62 +39,7 @@
         </div>
     </div>
 
-    <div class="container px-4 py-5">
-        <h2 class="pb-2 border-bottom">Features with title</h2>
-
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-            <div class="d-flex flex-column align-items-start gap-2">
-                <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-                <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with
-                    another sentence and probably just keep going until we run out of words.</p>
-                <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 g-4">
-                <div class="d-flex flex-column gap-2">
-                    <div
-                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                        <i class="bi-alarm"></i>
-
-                    </div>
-                    <h4 class="fw-semibold mb-0">Featured title</h4>
-                    <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-
-                <div class="d-flex flex-column gap-2">
-                    <div
-                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#gear-fill"></use>
-                        </svg>
-                    </div>
-                    <h4 class="fw-semibold mb-0">Featured title</h4>
-                    <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-
-                <div class="d-flex flex-column gap-2">
-                    <div
-                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#speedometer"></use>
-                        </svg>
-                    </div>
-                    <h4 class="fw-semibold mb-0">Featured title</h4>
-                    <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-
-                <div class="d-flex flex-column gap-2">
-                    <div
-                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#table"></use>
-                        </svg>
-                    </div>
-                    <h4 class="fw-semibold mb-0">Featured title</h4>
-                    <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
 
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -107,18 +52,21 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3">Access to millions of influencers</h1>
                 <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
                     most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
                     extensive prebuilt components, and powerful JavaScript plugins.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    <a href="/creator"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Join as
+                        Creator</button></a>
+                <a href="/brand"><button type="button" class="btn btn-info btn-lg px-4">Join as
+                        Brand</button></a>
                 </div>
             </div>
         </div>
     </div>
+  
 
-    <style>
+
         
 @endsection
