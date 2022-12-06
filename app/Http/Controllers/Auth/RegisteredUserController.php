@@ -58,6 +58,7 @@ class RegisteredUserController extends Controller
         } else {
             $role = Role::find(2);
             $user->attachRole($role);
+            $user->createAsStripeCustomer();
         }
 
 

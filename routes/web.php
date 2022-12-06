@@ -11,6 +11,10 @@ Route::get('', [WebController::class, 'home'])->name('home');
 Route::get('brand', [WebController::class, 'home_brand'])->name('home_brand');
 Route::get('creator', [WebController::class, 'home_creator'])->name('home_creator');
 
+Route::get('about', [WebController::class, 'about'])->name('about');
+Route::get('terms', [WebController::class, 'terms'])->name('terms');
+Route::get('privacy', [WebController::class, 'privacy'])->name('privacy');
+
 Route::middleware('auth')->group(function () {
     Route::get('dashboard', [WebController::class, 'dashboard'])->name('dashboard');
 

@@ -13,10 +13,7 @@ class Brief extends Model
         'title',
         'brand_description',
         'brief_description',
-        'caption',
-        'caption_required',
         'reference_url',
-        'budget',
         'status',
         'user_id'
     ];    

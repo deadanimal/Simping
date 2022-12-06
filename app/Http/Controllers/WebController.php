@@ -19,8 +19,24 @@ class WebController extends Controller
         return view('home-creator');
     }    
 
+    public function about(Request $request) {
+        return view('about');
+    }
+    
+    public function terms(Request $request) {
+        return view('terms');
+    }
+    
+    public function privacy(Request $request) {
+        return view('privacy');
+    }    
+
     public function dashboard(Request $request) {
         $user = $request->user();
-        return view('dashboard');
+        if ($user->hasRole('admin')) {
+            return view('dashboard_admin', compact('user'));
+        } else {
+            return view('dashboard', compact('user'));
+        }
     }
 }
