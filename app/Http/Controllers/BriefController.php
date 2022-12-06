@@ -63,6 +63,15 @@ class BriefController extends Controller
         return back();
     }
 
+    public function create_page(Request $request) {
+        $user = $request->user(); 
+        if($user->hasRole('brand')) {
+            return view('brief-create');
+        } else {
+            return back();
+        }
+    }
+
     public function list(Request $request) {
         $user = $request->user();        
         $briefs = Brief::where('user_id', $user->id)->get();

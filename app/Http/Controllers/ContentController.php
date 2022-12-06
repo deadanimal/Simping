@@ -20,6 +20,15 @@ class ContentController extends Controller
         return back();
     }
 
+    public function create_page(Request $request) {
+        $user = $request->user(); 
+        if($user->hasRole('creator')) {
+            return view('content-create');
+        } else {
+            return back();
+        }
+    }    
+
     public function list(Request $request) {
         $user = $request->user();        
         $contents = Content::where('user_id', $user->id)->get();
